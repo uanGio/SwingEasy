@@ -7,6 +7,8 @@ import javax.swing.JFrame;
 
 public class Table extends JFrame {
 
+    private Canva c;
+
     public Table(String title, int SizeX, int SizeY) {
         Table(title, SizeX, SizeY, 0, 0, true);
     }
@@ -23,6 +25,10 @@ public class Table extends JFrame {
             setLocationRelativeTo(this);
         }
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
+
+    public void setCanva(Canva c) {
+        this.setContentPane(c);
     }
 
     public void setCanva(Canva c) {
