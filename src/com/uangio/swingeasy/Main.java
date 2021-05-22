@@ -1,20 +1,16 @@
 package com.uangio.swingeasy;
 
-import javax.swing.JButton;
+import java.io.IOException;
+import test.Frame;
 
-public class Main {
 
-    public static void main(String[] args) {
-        System.out.println("Llamada de boton");
-       
+public class Main{
+    
+    public static void main(String[] args) throws IOException {
+        
+        Frame f = new Frame();
+        f.setVisible(true);
+        
     }
-
-    public JButton drawButton(String text, int x, int y, int sizeX, int sizeY) {
-        JButton button = new JButton();
-        button.setText(text);
-        button.setSize(sizeX, sizeY);
-        button.setLocation(x, y);
-        return button;
-    }
-
+    
 }
